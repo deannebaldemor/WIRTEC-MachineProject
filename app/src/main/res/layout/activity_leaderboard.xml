@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/leaderboardyellow"
+    tools:context="com.example.deannebaldemor.machineproject.Leaderboard">
+
+    <TextView
+        android:id="@+id/usernameTitle"
+        android:layout_width="173dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="USERNAME"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+        app:layout_constraintEnd_toStartOf="@+id/scoreTitle"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toEndOf="@+id/rankTitle" />
+
+    <TextView
+        android:id="@+id/rankTitle"
+        android:layout_width="68dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="44dp"
+        android:gravity="center"
+        android:text="RANK"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreTitle"
+        android:layout_width="68dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="44dp"
+        android:gravity="center"
+        android:text="SCORE"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="322dp"
+        android:layout_height="398dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/FED75F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@android:layout/simple_list_item_activated_1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="68dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="228dp"
+        android:gravity="center"
+        android:text="Rank:"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rankTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.862" />
+
+    <TextView
+        android:id="@+id/existing_rank"
+        android:layout_width="68dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="228dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/usernameTitle"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.864" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="68dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="228dp"
+        android:gravity="center"
+        android:text="Score:"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/usernameTitle"
+        app:layout_constraintEnd_toStartOf="@+id/existing_score"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/existing_rank"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.864" />
+
+    <TextView
+        android:id="@+id/existing_score"
+        android:layout_width="68dp"
+        android:layout_height="45dp"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="220dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/scoreTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+
+
+</android.support.constraint.ConstraintLayout>

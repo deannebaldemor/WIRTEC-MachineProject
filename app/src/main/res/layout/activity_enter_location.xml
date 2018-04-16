@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/map"
+    tools:context="com.example.deannebaldemor.machineproject.EnterLocation">
+
+    <ImageButton
+        android:id="@+id/asiaBtn"
+        android:layout_width="119dp"
+        android:layout_height="126dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/asia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/europeBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/europeBtn"
+        android:layout_width="99dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/europe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toEndOf="@+id/northAmBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/northAmBtn"
+        android:layout_width="101dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/northamerica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/southAmBtn"
+        android:layout_width="107dp"
+        android:layout_height="154dp"
+        android:layout_marginBottom="172dp"
+        android:layout_marginStart="16dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/southamerica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/northAmBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/africaBtn"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/africa"
+        app:layout_constraintStart_toEndOf="@+id/southAmBtn"
+        app:layout_constraintTop_toBottomOf="@+id/europeBtn" />
+
+    <ImageButton
+        android:id="@+id/ausBtn"
+        android:layout_width="119dp"
+        android:layout_height="94dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="52dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/australia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asiaBtn" />
+
+    <ImageButton
+        android:id="@+id/antarticaBtn"
+        android:layout_width="352dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/antartica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/southAmBtn" />
+
+    <ImageView
+        android:id="@+id/asCheck"
+        android:layout_width="26dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="168dp"
+        android:src="@drawable/check"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toEndOf="@+id/europeBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/euCheck"
+        android:layout_width="26dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="144dp"
+        android:src="@drawable/check"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/asiaBtn"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/europeBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/naCheck"
+        android:layout_width="26dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/check"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/northAmBtn"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toStartOf="@+id/northAmBtn"
+        app:layout_constraintTop_toTopOf="@+id/northAmBtn" />
+
+    <ImageView
+        android:id="@+id/saCheck"
+        android:layout_width="26dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/check"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/southAmBtn"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/southAmBtn"
+        app:layout_constraintTop_toTopOf="@+id/southAmBtn" />
+
+    <ImageView
+        android:id="@+id/anCheck"
+        android:layout_width="26dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/check"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/antarticaBtn"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/antarticaBtn"
+        app:layout_constraintTop_toTopOf="@+id/antarticaBtn" />
+
+    <ImageView
+        android:id="@+id/auCheck"
+        android:layout_width="26dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/check"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/ausBtn"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toEndOf="@+id/africaBtn"
+        app:layout_constraintTop_toTopOf="@+id/ausBtn" />
+
+    <ImageView
+        android:id="@+id/afCheck"
+        android:layout_width="26dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/check"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/africaBtn"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/africaBtn"
+        app:layout_constraintTop_toTopOf="@+id/africaBtn" />
+
+    <Button
+        android:id="@+id/returnBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:text="RETURN TO HOME"
+        android:textColor="#FED75F"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

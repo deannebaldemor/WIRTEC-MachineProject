@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/sourceTextview"
+            android:layout_width="117dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical|center"
+            android:text="iambestever"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/user_score"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.533" />
+
+        <TextView
+            android:id="@+id/user_score"
+            android:layout_width="75dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="120"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/user_rank"
+            android:layout_width="33dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical|center"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="16dp"
+            tools:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/avatarView"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/mexican"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sourceTextview"
+            app:layout_constraintHorizontal_bias="0.592"
+            app:layout_constraintStart_toEndOf="@+id/user_rank"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.666"
+            app:srcCompat="@android:color/transparent" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
