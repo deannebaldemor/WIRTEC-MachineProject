@@ -11,7 +11,7 @@
         android:background="@color/colorPrimaryDark">
 
         <TextView
-            android:id="@+id/sourceTextview"
+            android:id="@+id/user_name"
             android:layout_width="117dp"
             android:layout_height="37dp"
             android:layout_marginBottom="8dp"
@@ -69,7 +69,7 @@
             android:layout_marginTop="8dp"
             android:src="@drawable/mexican"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/sourceTextview"
+            app:layout_constraintEnd_toStartOf="@+id/user_name"
             app:layout_constraintHorizontal_bias="0.592"
             app:layout_constraintStart_toEndOf="@+id/user_rank"
             app:layout_constraintTop_toTopOf="parent"

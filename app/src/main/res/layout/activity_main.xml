@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.deannebaldemor.machineproject.MainActivity">
+    tools:context="com.example.deannebaldemor.wip.MainActivity">
 
     <ImageView
         android:id="@+id/bgimageView"
@@ -35,7 +35,7 @@
             android:layout_below="@+id/leaderboardBtn"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="208dp"
+            android:layout_marginTop="236dp"
             android:layout_toEndOf="@+id/exitBtn"
             android:background="@android:color/transparent"
             android:text="START"
@@ -43,6 +43,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,7 +71,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="8dp"
             android:background="@android:color/transparent"
             android:text="CREDITS"
             android:textColor="?android:attr/colorPressedHighlight"
